@@ -1,6 +1,7 @@
 import sqlite3
 
 #conectando ao banco
+#connecting to db
 
 try:
     conn = sqlite3.connect('alunos.db')
@@ -9,6 +10,7 @@ except sqlite3.Error as e:
     print("Erro ao conectar com o banco de dados:", e)
     
 #criando a tabela de alunos
+#creating the student table
 try:
     with conn:
         cur = conn.cursor()
